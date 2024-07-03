@@ -1,18 +1,21 @@
 DROP TABLE IF EXISTS hotel;
 
 CREATE TABLE `hotel` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `address` varchar(100) NOT NULL,
+  `hotelid` int NOT NULL AUTO_INCREMENT,
+  `hotelname` varchar(100) NOT NULL,
+  `hoteladdress` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
 );
 
 INSERT INTO public.hotel(
-	id, name, address)
-	VALUES (1,'Hotel Oro Verde','Av. 9 de Octubre 414');
+	hotelid, hotelname, hoteladdress)
+	VALUES (1,'Hotel Marcelius', 'Kennedy Norte Miguel Hilario Alcívar y Jose Alavedra Tama Manzana 202-75 y Solar 4-6');
 INSERT INTO public.hotel(
-	id, name, address)
-	VALUES (2,'Hotel Las Peñas','Escobedo 1215 entre 9 de Octubre y Vélez');
+	hotelid, hotelname, hoteladdress)
+	VALUES (2,'The Park Hotel', 'Chile 414 y Clemente Ballén');
 INSERT INTO public.hotel(
-	id, name, address)
-	VALUES (3,'Hotel Air Suites','Ciudadela Simon Bolivar Mz 5 solar 33');
+	hotelid, hotelname, hoteladdress)
+	VALUES (3,'Hotel Atlantic Suites', 'Escobedo 812 entre Luis Urdaneta y Junin');
+INSERT INTO public.hotel(
+	hotelid, hotelname, hoteladdress)
+	VALUES (4,'Hotel Murali', 'Garzota 2 La Salle y 3er callejon Mz 135 Villa 7');

@@ -15,7 +15,7 @@ public class HotelController {
 	@Autowired
 	private HotelService hotelService;
 	
-	@GetMapping("hotels")
+	@GetMapping("hotel")
 	public List<Hotel> search(){
 		return hotelService.search();
 		

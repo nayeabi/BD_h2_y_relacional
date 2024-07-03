@@ -10,34 +10,34 @@ public class Hotel {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
+	private int hotelid;
 	
-	private String name;
+	private String hotelname;
 	
-	private String address;
+	private String hoteladdress;
 
-	public int getId() {
-		return id;
+	public int getHotelid() {
+		return hotelid;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setHotelid(int hotelid) {
+		this.hotelid = hotelid;
 	}
 
-	public String getName() {
-		return name;
+	public String getHotelname() {
+		return hotelname;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setHotelname(String hotelname) {
+		this.hotelname = hotelname;
 	}
 
-	public String getAddress() {
-		return address;
+	public String getHoteladdress() {
+		return hoteladdress;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setHoteladdress(String hoteladdress) {
+		this.hoteladdress = hoteladdress;
 	}
 	
 }
